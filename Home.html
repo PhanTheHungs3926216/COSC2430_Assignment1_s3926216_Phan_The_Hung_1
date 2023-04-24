@@ -1,0 +1,143 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Phan The Hung
+ID: s3926216
+Acknowledgement: HTML, CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-line">
+    <div class="logo">
+      <img src="images/Home-images/book.jpg" alt="Online Bookstore logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown">
+        <a href="Home.html">Book Category</a>
+        <ul class="submenu">
+          <li><a href="Category 1.html">Fiction</a></li> 
+          <li><a href="Category 2.html">Non-Fiction</a></li>
+          <li><a href="Category 3.html">Reference</a></li>
+        </ul>
+        </li>
+      </ul>
+      </nav>
+    <form class="search-form" action="#">
+      <input type="text" placeholder="......">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <section class="category-home">
+      <h2 class="category-title"><a href="Category 1.html">Fiction Books</a></h2>
+      <ul class="books">
+        <li>
+          <a href="Book_detail-1-1-1.html" alt="Star Trek: Destiny">
+            <img src="images/Fiction/Book-1-1-1.jpg" alt="Star Trek: Destiny">
+            <h3>Star Trek: Destiny</h3>
+            <p>David Mack (Author)</p>
+            <h4>$29.99</h4>
+          </a>
+        </li>
+        <li>
+          <a href="Book-detail-1-2-1.html">
+            <img src="images/Fiction/Book-1-2-1.jpg" alt="Notre-Dame of Paris">
+            <h3>Notre-Dame of Paris (The Hunchback of Notre Dame)</h3>
+            <p>Victor Hugo (Author), John Sturrock (Translator, Introduction)</p>
+            <h4>$24.00</h4>
+          </a>
+        </li>
+        <li>
+          <a href="book-detail-1-3-1.html">
+            <img src="images/Fiction/Book-1-3-1.jpg" alt="All Quiet on the Western Front">
+            <h3>All Quiet on the Western Front: A Novel</h3>
+            <p>Erich Maria Remarque (Author), A W. Wheen (Translator)</p>
+            <h4>$10.00</h4>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="category-home">
+      <h2 class="category-title"><a href="Category 2.html">Non-Fiction</a></h2>
+      <ul class="books">
+        <li>
+          <a href="Book_detail-2-1-1.html">
+            <img src="images/Non-Fiction/Book-2-1-1.jpg" alt="Book 1">
+            <h3>The Last Stand of the Tin Can Sailors: The Extraordinary World War II Story of the U.S. Navy's Finest Hour</h3>
+            <p>James D. Hornfischer (Author)</p>
+          </a>
+        </li>
+        <li>
+          <a href="Book-detail-2-2-1.html">
+            <img src="images/Non-Fiction/Book-2-2-1.jpg" alt="The Theory of Everything">
+            <h3>The Theory of Everything: The Origin and Fate of the Universe</h3>
+            <p>Stephen W. Hawking (Author)</p>
+            <h4>$14.99</h4>
+          </a>
+        </li>
+        <li>
+          <a href="Book-detail-2-3-1.html">
+            <img src="images/Non-Fiction/Book-2-3-1.jpg" alt="Book 6">
+            <h3>The Origin of Species: 150th Anniversary Edition</h3>
+            <p>Charles Darwin (Author), Julian Huxley (Introduction)</p>
+            <h4>$10.00</h4>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="category-home">
+        <h2 class="category-title"><a href="Category 3.html">Reference Books</a></h2>
+        <ul class="books">
+          <li>
+            <a href="Book-detail-3-1-1.html">
+              <img src="images/Reference/Book-3-1-1.jpg" alt="Oxford English Dictionary">
+              <h3>Oxford English Dictionary</h3>
+              <h4>$5.00</h4>
+            </a>
+          </li>
+          <li>
+            <a href="Book-detail-3-2-1.html">
+              <img src="images/Reference/Book-3-2-1.jpg" alt="The Encyclopedia of Science Fiction">
+              <h3>The Encyclopedia of Science Fiction</h3>
+              <p>Peter Nicholls (Editor)</p>  
+              <h4>$25.00</h4>
+            </a>
+          </li>
+          <li>
+            <a href="Book-detail-3-3-1.html">
+              <img src="images/Reference/Book-3-3-1.jpg" alt="National Geographic Atlas of the World">
+              <h3>National Geographic Atlas of the World, 11th Edition</h3>
+              <p>National Geographic (Author)</p>
+              <h4>$50.00</h4>
+            </a>
+          </li>
+        </ul>
+      </section>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="About-us.html">About Us</a></li>
+        <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="Terms.html">Terms</a></li>
+        <li><a href="Copyright.html">Copyright</a></li>
+        <li><a href="Contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
+

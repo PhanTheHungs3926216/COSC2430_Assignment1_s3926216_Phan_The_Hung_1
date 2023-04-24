@@ -1,0 +1,384 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Phan The Hung
+ID: s3926216
+Acknowledgement: HTML, CSS. */
+
+/** Home page **/
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background color for the whole page */
+body {
+  background-color: #f4f4f4;
+  background-image: url("images/Home-images/Stars.jpg");
+  background-size: cover 50%;
+}
+
+/* Style for header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: navy;
+  padding: 10px;
+}
+
+.header-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+
+/* Style for main section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 240px);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+section {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+section a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section a:hover {
+  color: #666;
+}
+
+/* Style for footer section */
+footer {
+  background-color: navy;
+  color: #fff;
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav li {
+  margin-right: 10px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer nav a:hover {
+  color: #ddd;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Style for video section */
+video {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.category-home {
+  width: 55%;
+}
+
+.category-page-header {
+  width: 32%;
+}
+
+.category {
+  width: 75%;
+}
+
+.category-title {
+  margin-bottom: 20px;
+}
+.category-title a{
+  font-size: 32px
+}
+
+/* Style for Home page section */
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.books li {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.books li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.books li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Style for Book category page section */
+.books-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.books-category li {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+.books-category li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.books-category li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Style for navigation section */
+nav {
+  margin-left: auto;
+}
+
+ul li {
+
+  list-style-type: none;
+}
+
+/* */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 200px;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+  background-color: #000080;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/** Category page **/
+
+.contact-page {
+  width: 25%;
+}
+
+
+/** Book detail page **/
+.category-detail-highlight {
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* styles for column 1 */
+.col1{
+  grid-column: 1 / 2;
+}
+
+.col1 img{
+  width: 120%;
+  margin-left: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styles for column 2 */
+.col2{
+  grid-column: 2 / 3;
+}
+
+.col2 img{
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container img {
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+/* styles for column 3 */
+.container3 {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
+}
+
+.col3 {
+  grid-column: 3 / 4;
+}
+
+.col3 h1 {
+  font-size: 2.8em;
+}
+
+.col3 button {
+  padding: 16px;
+  font-size: 18px;
+  background-color: darkgrey;
+  color: white;
+}
+
+.quote {
+  font-weight: bold;
+}
+
+.publiser-detail {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/** Contact page **/
+
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+}
+
+.contact-page li {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+}
+
+.contact-page li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+}
+
+.contact-page li img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,96 @@
+<!--
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Phan The Hung
+ID: s3926216
+Acknowledgement: HTML, CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-line">
+    <div class="logo">
+      <img src="images/Home-images/book.jpg" alt="Online Bookstore">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+         <li class="dropdown">
+          <a href="Home.html">Book Category</a>
+          <ul class="submenu">
+           <li><a href="Category 1.html">Fiction</a></li> 
+           <li><a href="Category 2.html">Non-Fiction</a></li>
+           <li><a href="Category 3.html">Reference</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <form class="search-form" action="#">
+      <input type="text" placeholder="......">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <section class="contact-page">
+    <form action="#" method="post">
+      <h1>Contact Us</h1>
+      <label for="contact-purpose">Contact purpose:</label>
+      <select id="contact-purpose" name="contact-purpose">
+        <option value="sell">I want to sell books</option>
+        <option value="buy">I want to buy books</option>
+      </select><br>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" size="30"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" size="30"><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" size="27"><br>
+
+      <label>Contact preference:</label><br>
+      <input type="checkbox" id="by-email" name="contact-preference" value="email">
+      <label for="by-email">By email</label><br>
+
+      <input type="checkbox" id="by-phone" name="contact-preference" value="phone">
+      <label for="by-phone">By phone</label><br>
+
+      <label>Receive weekly newsletter:</label><br>
+      <input type="radio" id="yes-newsletter" name="newsletter" value="yes" checked>
+      <label for="yes-newsletter">Yes</label><br>
+
+      <input type="radio" id="no-newsletter" name="newsletter" value="no">
+      <label for="no-newsletter">No</label><br>
+
+      <label for="extra-notes">Extra notes:</label><br>
+      <textarea id="extra-notes" name="extra-notes"></textarea><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="About-us">About Us</a></li>
+        <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="Terms.html">Terms</a></li>
+        <li><a href="Copyright.html">Copyright</a></li>
+        <li><a href="Contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
